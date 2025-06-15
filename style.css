@@ -93,7 +93,7 @@ ul {
 .title {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 75%;
   background-color: rgba(255, 0, 98, 0.25);
   margin: 0 auto;
   margin-top: 10px;
