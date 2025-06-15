@@ -72,13 +72,13 @@ h2 {
 }
 
 .li a {
-  color: inherit;
+  color: #000000;
   font-size: clamp(2rem, 2vw, 3rem);
   padding: 2px;
 }
 
 .menu a:visited {
-  color: inherit;  /* or set to whatever color you want */
+  color: #000000;
   text-decoration: none; /* optional */
 }
 
@@ -117,4 +117,8 @@ ul {
   border-radius: 10px; /* optional: rounded corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: soft shadow */
   padding: 10px;
+}
+
+p {
+  font-size: 16px;
 }
