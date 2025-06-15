@@ -123,11 +123,10 @@ ul {
 }
 
 .gallery-grid img {
-  width: 100%; /* image stretches to column width */
+  width: 75%; /* image stretches to column width */
   height: auto; /* maintain aspect ratio */
   border-radius: 10px; /* optional: rounded corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: soft shadow */
-  padding: 10px;
 }
 
 p {
@@ -136,7 +135,6 @@ p {
 
 /* Style the thumbnails */
 .thumbnail {
-  width: 100%;
   margin: 0px;
   cursor: pointer;
   border-radius: 8px;
