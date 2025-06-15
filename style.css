@@ -37,11 +37,11 @@ body {
   position: relative;
 }
 
-.h1 {
+h1 {
   font-size: clamp(4rem, 12vw, 10rem);
 }
 
-.h2 {
+h2 {
   font-size: clamp(2rem, 8vw, 6rem);
 }
 
