@@ -123,7 +123,7 @@ ul {
 }
 
 .gallery-grid img {
-  width: 75%; /* image stretches to column width */
+  width: 80%; /* image stretches to column width */
   height: auto; /* maintain aspect ratio */
   border-radius: 10px; /* optional: rounded corners */
   box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* optional: soft shadow */
