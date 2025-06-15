@@ -48,3 +48,19 @@ body {
   font-weight: bold;
   color: #ffcc00;
 }
+
+.li {
+  background-color: #ab0186;
+}
+
+.li a {
+  color: inherit;
+}
+
+ul {
+  display: flex;
+  gap: 10px; /* space between items */
+  padding: 0; /* remove default padding */
+  margin: 0;  /* remove default margin */
+  list-style: none; /* remove bullets */
+}
