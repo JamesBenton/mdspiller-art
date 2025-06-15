@@ -59,7 +59,7 @@ h2 {
 }
 
 .menu li {
-  margin: 0 5px; /* space between menu items */
+  margin: 0 1px; /* space between menu items */
   background-color: rgba(255, 0, 98, 0.25);
   font-size: clamp(1rem, 1.5vw, 2rem);
 }
