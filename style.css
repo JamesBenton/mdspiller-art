@@ -59,21 +59,21 @@ h2 {
 
 .menu a.active {
   font-weight: bold;
-  color: #ffcc00;
+  color: #000000;
+  background-color: rgba(255, 0, 98, 0.416);
 }
 
 .menu li {
   margin: 0 1px; /* space between menu items */
   background-color: rgba(255, 0, 98, 0.25);
-  font-size: clamp(0.5rem, 2vw, 2rem);
   padding: 4px;
   font-weight: bold;
   border-radius: 10px;
 }
 
 li a {
-  color: #000000;
-  font-size: clamp(2rem, 2vw, 3rem);
+  color: #24000f;
+  font-size: clamp(0.5rem, 2vw, 3rem);
   padding: 2px;
 }
 
