@@ -71,10 +71,14 @@ h2 {
   border-radius: 10px;
 }
 
-.li a {
+li a {
   color: #000000;
   font-size: clamp(2rem, 2vw, 3rem);
   padding: 2px;
+}
+
+a {
+  color: #000000;
 }
 
 .menu a:visited {
