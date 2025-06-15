@@ -76,8 +76,8 @@ h2 {
 
 ul {
   display: flex;
-  gap: 10px; /* space between items */
-  padding: 0; /* remove default padding */
+  gap: 1px; /* space between items */
+  padding: 2px; /* remove default padding */
   margin: 0;  /* remove default margin */
   list-style: none; /* remove bullets */
 }
