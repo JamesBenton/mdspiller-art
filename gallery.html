@@ -22,10 +22,16 @@
   </div>
   <main>
     <div class="gallery-grid">
-      <img src="images/American Badger.jpg" alt="Artwork 1">
-      <img src="images/Finger Pointing.jpg" alt="Artwork 2">
-      <img src="images/Triangles.jpg" alt="Artwork 3">
+      <img src="images/American Badger.jpg" alt="Artwork 1" class="thumbnail" onclick="openModal(this)">
+      <img src="images/Finger Pointing.jpg" alt="Artwork 2" class="thumbnail" onclick="openModal(this)">
+      <img src="images/Triangles.jpg" alt="Artwork 3" class="thumbnail" onclick="openModal(this)">
       <!-- Add more images as needed -->
+    </div>
+
+    <div id="imgModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div id="caption"></div>
     </div>
   </main>
 </body>
