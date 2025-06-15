@@ -61,6 +61,7 @@ h2 {
 .menu li {
   margin: 0 5px; /* space between menu items */
   background-color: #ab0186;
+  font-size: clamp(2rem, 2vw, 3rem);
 }
 
 .li a {
