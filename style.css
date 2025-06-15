@@ -87,6 +87,7 @@ ul {
 
 .title {
   display: flex;
+  flex-direction: column;
   width: 50%;
   background-color: rgba(62,73,85,0.25);
   margin: 0 auto;
