@@ -68,7 +68,7 @@ h2 {
   font-size: clamp(1rem, 2vw, 2rem);
   padding: 4px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .li a {
@@ -98,5 +98,19 @@ ul {
   margin: 0 auto;
   margin-top: 10px;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
+  gap: 20px; /* space between images */
+  padding: 20px;
+}
+
+.gallery-grid img {
+  width: 100%; /* image stretches to column width */
+  height: auto; /* maintain aspect ratio */
+  border-radius: 10px; /* optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: soft shadow */
 }
