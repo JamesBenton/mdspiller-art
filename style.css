@@ -80,3 +80,8 @@ ul {
   margin: 0;  /* remove default margin */
   list-style: none; /* remove bullets */
 }
+
+.title {
+  background-color: #3e4955;
+  opacity: 50%;
+}
