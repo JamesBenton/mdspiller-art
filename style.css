@@ -65,7 +65,7 @@ h2 {
 
 .li a {
   color: inherit;
-  text-size-adjust: 4rem;
+  font-size: clamp(2rem, 2vw, 3rem);
 }
 
 .menu a:visited {
