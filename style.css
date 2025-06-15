@@ -91,7 +91,7 @@ ul {
   display: flex;
   flex-direction: column;
   width: 50%;
-  background-color: rgba(225, 170, 206, 0.4);
-  margin: 0 auto;
+  background-color: rgba(255, 0, 98, 0.1);
+  margin: 10 auto;
   padding: 10px;
 }
