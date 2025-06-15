@@ -40,13 +40,13 @@ body {
 h1 {
   font-size: clamp(4rem, 2vw, 8rem);
   margin-bottom: 0px;
-  color: #425b74;
+  color: #000000;
 }
 
 h2 {
   font-size: clamp(2rem, 2vw, 4rem);
   margin-bottom: 0px;
-  color: #425b74;
+  color: #000000;
 }
 
 .menu {
