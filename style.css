@@ -60,8 +60,8 @@ h2 {
 
 .menu li {
   margin: 0 5px; /* space between menu items */
-  background-color: #ab0186;
-  font-size: clamp(2rem, 2vw, 3rem);
+  background-color: rgba(255, 0, 98, 0.25);
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .li a {
