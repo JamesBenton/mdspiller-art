@@ -83,6 +83,6 @@ ul {
 }
 
 .title {
-  background-color: #3e4955;
-  opacity: 50%;
+  width: 50%;
+  background-color: rgba(62,73,85,0.25);
 }
