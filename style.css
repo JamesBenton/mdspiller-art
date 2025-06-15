@@ -16,3 +16,13 @@ body {
   font-size: 1.2rem;
   color: #777;
 }
+
+.hero {
+  background-image: url('images/Home Page Cover Art.jpg');
+  background-size: cover;       /* stretch and crop to fill */
+  background-position: center;  /* center the image */
+  color: white;                 /* make text readable */
+  padding: 100px 20px;          /* space inside the box */
+  text-align: center;           /* center text horizontally */
+  height: 100vh;                /* optional: full screen height */
+}
