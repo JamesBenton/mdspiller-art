@@ -38,13 +38,13 @@ body {
 }
 
 h1 {
-  font-size: clamp(1.5rem, 5vw, 8rem);
+  font-size: clamp(1.5rem, 5vw, 5rem);
   margin-bottom: 0px;
   color: #000000;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-size: clamp(1rem, 5vw, 2rem);
   margin-bottom: 0px;
   color: #000000;
 }
