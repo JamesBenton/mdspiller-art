@@ -106,6 +106,9 @@ ul {
   grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
   gap: 20px; /* space between images */
   padding: 20px;
+  width: 75%;
+  margin: 0 auto; /* horizontally center */
+  
 }
 
 .gallery-grid img {
