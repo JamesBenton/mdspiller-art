@@ -38,11 +38,11 @@ body {
 }
 
 h1 {
-  font-size: clamp(4rem, 12vw, 10rem);
+  font-size: clamp(4rem, 2vw, 8rem);
 }
 
 h2 {
-  font-size: clamp(2rem, 8vw, 6rem);
+  font-size: clamp(2rem, 2vw, 4rem);
 }
 
 .menu {
