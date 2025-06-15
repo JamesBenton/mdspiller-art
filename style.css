@@ -127,6 +127,7 @@ ul {
   height: auto; /* maintain aspect ratio */
   border-radius: 10px; /* optional: rounded corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: soft shadow */
+  margin: 0 auto;
 }
 
 p {
