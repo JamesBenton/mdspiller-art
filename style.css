@@ -89,5 +89,6 @@ ul {
   display: flex;
   width: 50%;
   background-color: rgba(62,73,85,0.25);
-  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
 }
