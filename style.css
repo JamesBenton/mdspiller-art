@@ -40,11 +40,13 @@ body {
 h1 {
   font-size: clamp(4rem, 2vw, 8rem);
   margin-bottom: 0px;
+  color: #425b74;
 }
 
 h2 {
   font-size: clamp(2rem, 2vw, 4rem);
   margin-bottom: 0px;
+  color: #425b74;
 }
 
 .menu {
@@ -64,9 +66,9 @@ h2 {
   margin: 0 1px; /* space between menu items */
   background-color: rgba(255, 0, 98, 0.25);
   font-size: clamp(1rem, 2vw, 2rem);
-  padding: 2px;
+  padding: 4px;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .li a {
@@ -96,5 +98,5 @@ ul {
   margin: 0 auto;
   margin-top: 10px;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
