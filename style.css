@@ -70,9 +70,9 @@ h2 {
   list-style: none;
 }
 
-.menu li.active {
+.active {
   font-weight: bold;
-  color: rgba(255, 0, 98, 0.416);
+  color: rgb(52, 0, 12);
 }
 
 .menu li {
