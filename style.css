@@ -105,6 +105,10 @@ ul {
   border-radius: 10px;
 }
 
+.title div {
+  background-image: url('images/Contact page picture.jpeg');
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
