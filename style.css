@@ -4,7 +4,8 @@ body {
   background-color: #f9fafb; /* lighter neutral */
   color: #1f2937; /* dark slate gray */
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  padding: 20px;
+  padding: 0px;
+  margin: 0px;
 }
 
 #intro {
@@ -64,6 +65,13 @@ body {
   margin-top: 0.5rem;
 }
 
+.menu {
+  width: 100%;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 .menu ul {
   display: flex;
   justify-content: center;
@@ -99,14 +107,14 @@ body {
 }
 
 .title {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  background-color: rgba(255, 0, 98, 0.25);
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 900px;
+  margin: 1rem auto;
+  font-weight: 600;
+  color: #111827;
 }
 
 .title div {
