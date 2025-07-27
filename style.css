@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 body {
-  background-color: #fefefe;
-  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb; /* lighter neutral */
+  color: #1f2937; /* dark slate gray */
+  font-family: 'Inter', 'Segoe UI', sans-serif;
   padding: 20px;
-  color: #333;
 }
 
 #intro {
@@ -23,14 +25,21 @@ body {
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
   background-image: url('images/Home Page Cover Art.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.75;  /* control transparency */
-  z-index: -1;   /* behind text */
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+  z-index: -1;
 }
 
 .gallery {
@@ -42,16 +51,17 @@ body {
   position: relative;
 }
 
-h1 {
-  font-size: clamp(1rem, 5vw, 5rem);
-  margin: 0px;
-  color: #000000;
+.hero h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: white;
+  text-shadow: 0 0 15px rgba(0,0,0,0.8);
 }
 
-h2 {
-  font-size: clamp(0.5rem, 5vw, 2rem);
-  margin-bottom: 0px;
-  color: #000000;
+.hero h2 {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  margin-top: 0.5rem;
 }
 
 .menu ul {
@@ -70,58 +80,23 @@ h2 {
 .menu ul li a {
   color: white;
   text-decoration: none;
-  padding: 14px 20px;
   display: block;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(99,102,241,0.3);
+  border-radius: 12px;
+  padding: 14px 24px;
+  text-shadow: none;
+  text-decoration: none;
 }
 
 .menu ul li a:hover,
 .menu ul li a.active {
-  background-color: #555;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  box-shadow: 0 6px 20px rgba(139,92,246,0.5);
+  border-radius: 8px;
 }
-
-/*
-.menu {
-  display: flex;
-  justify-content: center; 
-  padding: 0;
-  margin: 0;
-  margin-bottom: 10px;
-  background-color: rgba(255, 0, 98, 0.25);
-  list-style: none;
-}
-
-.active {
-  font-weight: bold;
-  color: rgb(118, 0, 28);
-}
-
-.menu li {
-  margin: 0 1px;
-  padding: 4px;
-  font-weight: bold;
-  border-radius: 10px;
-}
-
-li a {
-  color: #24000f;
-  font-size: clamp(0.5rem, 2vw, 3rem);
-  padding: 2px;
-}
-
-a {
-  color: #000000;
-}
-
-ul {
-  display: flex;
-  gap: 1px; 
-  padding: 2px;
-  margin: 0;  
-  list-style: none;
-}
-*/
 
 .title {
   display: flex;
@@ -140,12 +115,9 @@ ul {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
-  gap: 20px; /* space between images */
-  padding: 20px;
-  width: 75%;
-  margin: 0 auto; /* horizontally center */
-  
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 24px;
 }
 
 .gallery-grid img {
@@ -169,15 +141,36 @@ p {
 
 /* Modal container */
 .modal {
-  display: none; 
-  position: fixed; 
+  display: flex; /* changed from none - toggle with JS */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  position: fixed;
   z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  inset: 0;
+  background-color: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
 }
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close {
+  top: 15px;
+  right: 15px;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close:hover {
+  color: #ef4444; /* red-500 */
+}
+
 
 /* Image in the modal */
 .modal-content {
@@ -185,14 +178,4 @@ p {
   max-height: 80%;
   margin: auto;
   border-radius: 10px;
-}
-
-/* Close button */
-.close {
-  position: absolute;
-  top: 20px; right: 35px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
 }
