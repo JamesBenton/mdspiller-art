@@ -54,9 +54,37 @@ h2 {
   color: #000000;
 }
 
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+}
+
+.menu ul li {
+  margin: 0 20px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/*
 .menu {
   display: flex;
-  justify-content: center; /* centers items horizontally */
+  justify-content: center; 
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
@@ -70,7 +98,7 @@ h2 {
 }
 
 .menu li {
-  margin: 0 1px; /* space between menu items */
+  margin: 0 1px;
   padding: 4px;
   font-weight: bold;
   border-radius: 10px;
@@ -88,11 +116,12 @@ a {
 
 ul {
   display: flex;
-  gap: 1px; /* space between items */
-  padding: 2px; /* remove default padding */
-  margin: 0;  /* remove default margin */
-  list-style: none; /* remove bullets */
+  gap: 1px; 
+  padding: 2px;
+  margin: 0;  
+  list-style: none;
 }
+*/
 
 .title {
   display: flex;
