@@ -215,7 +215,7 @@ form input[type="email"],
 form input[type="file"],
 form textarea {
   width: 100%;
-  padding: 0.75rem 10px;
+  padding: 0.75rem 10 px;
   margin-bottom: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
