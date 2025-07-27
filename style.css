@@ -92,7 +92,7 @@ body {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   background: linear-gradient(135deg, #404199 0%, #54224e 100%);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   box-shadow: 0 4px 6px rgba(99,102,241,0.3);
   border-radius: 1px;
   padding: 7px 24px;
