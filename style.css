@@ -82,10 +82,10 @@ body {
   text-decoration: none;
   display: block;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #404199 0%, #54224e 100%);
   font-weight: 600;
   box-shadow: 0 4px 6px rgba(99,102,241,0.3);
-  border-radius: 12px;
+  border-radius: 1px;
   padding: 14px 24px;
   text-shadow: none;
   text-decoration: none;
@@ -93,9 +93,9 @@ body {
 
 .menu ul li a:hover,
 .menu ul li a.active {
-  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  background: linear-gradient(135deg, #54224e 0%, #404199 100%);
   box-shadow: 0 6px 20px rgba(139,92,246,0.5);
-  border-radius: 8px;
+  border-radius: 1px;
 }
 
 .title {
