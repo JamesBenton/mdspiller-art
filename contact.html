@@ -32,11 +32,13 @@
       <label for="message">Message:</label><br>
       <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
+      <input type="file" name="attachment" accept="image/png, image/jpeg">
+
       <!-- Optional: Turn off captcha -->
       <input type="hidden" name="_captcha" value="false">
 
       <!-- Optional: Redirect after submit -->
-      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_next" value="/thankyou.html">
 
       <button type="submit">Send</button>
     </form>
