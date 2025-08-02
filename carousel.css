@@ -1,0 +1,33 @@
+.carousel-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.carousel {
+    display: flex;
+    width: 500%; /* 5 images = 500% */
+    animation: slide 15s infinite;
+}
+
+.carousel img {
+    width: 20%; /* 100% / 5 images = 20% each */
+    height: 400px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-20%); }
+    45% { transform: translateX(-20%); }
+    50% { transform: translateX(-40%); }
+    70% { transform: translateX(-40%); }
+    75% { transform: translateX(-60%); }
+    95% { transform: translateX(-60%); }
+    100% { transform: translateX(-80%); }
+}
