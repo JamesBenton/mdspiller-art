@@ -33,10 +33,37 @@
   user-select: auto;
 }
 
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.carousel-controls button {
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 .carousel-dots {
   text-align: center;
   margin-top: 12px;
-  user-select: none;
 }
 
 .carousel-dots .dot {

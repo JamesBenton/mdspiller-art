@@ -1,37 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const carousel = document.querySelector('.carousel');
   const slides = document.querySelectorAll('.carousel-slide');
   const dots = document.querySelectorAll('.carousel-dots .dot');
+  const prevBtn = document.querySelector('.carousel-controls .prev');
+  const nextBtn = document.querySelector('.carousel-controls .next');
+  const carousel = document.querySelector('.carousel-container');
   let currentIndex = 0;
 
-  function updateCarouselHeight() {
-    const activeSlide = slides[currentIndex];
-    if (activeSlide) {
-      carousel.style.height = activeSlide.offsetHeight + 'px';
+  function updateCarousel() {
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === currentIndex));
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
+    // Adjust container height to active image height
+    if (slides[currentIndex]) {
+      carousel.style.height = slides[currentIndex].offsetHeight + 'px';
     }
   }
 
-  function setActiveSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === index);
-    });
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === index);
-    });
+  function goToSlide(index) {
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
     currentIndex = index;
-    updateCarouselHeight();
+    updateCarousel();
   }
+
+  prevBtn.addEventListener('click', () => {
+    goToSlide(currentIndex - 1);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    goToSlide(currentIndex + 1);
+  });
 
   dots.forEach(dot => {
     dot.addEventListener('click', () => {
       const index = parseInt(dot.getAttribute('data-index'), 10);
-      setActiveSlide(index);
+      goToSlide(index);
     });
   });
 
   // Initialize
-  updateCarouselHeight();
+  updateCarousel();
 
-  // Optional: handle window resize to adjust height
-  window.addEventListener('resize', updateCarouselHeight);
+  window.addEventListener('resize', updateCarousel);
 });
