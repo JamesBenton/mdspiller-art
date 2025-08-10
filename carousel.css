@@ -6,6 +6,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   overflow: hidden;
+  
 }
 
 .carousel {
@@ -24,6 +25,7 @@
   border-radius: 10px;
   pointer-events: none;
   user-select: none;
+  object-fit: contain;
 }
 
 .carousel-slide.active {
@@ -62,8 +64,13 @@
 }
 
 .carousel-dots {
+  position: absolute;
+  bottom: 10px;  /* or whatever spacing you want */
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  z-index: 20;  /* make sure it's on top */
   text-align: center;
-  margin-top: 12px;
 }
 
 .carousel-dots .dot {
@@ -75,8 +82,15 @@
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* subtle shadow */
+  border: 1px solid rgba(0, 0, 0, 0.2);   /* light border */
 }
 
 .carousel-dots .dot.active {
   background-color: white;
+}
+
+.carousel-dots .dot:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
