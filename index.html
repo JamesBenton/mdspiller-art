@@ -30,8 +30,29 @@
           <img src="images/Tyler M Cow.jpg" alt="Cow for Tyler M">
       </div>
   </div>
+  <!-- Navigation Dots -->
+  <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+  </div>
+</div>
   <main>
     <p id="intro">At some point, more will be added to the gallery! I need to finish my master's thesis first. Help me do that!</p>
   </main>
+  <script>
+    const dots = document.querySelectorAll(".carousel-dots .dot");
+    let currentIndex = 0;
+    const totalSlides = dots.length;
+
+    // Change active dot every 3 seconds (match your animation timing)
+    setInterval(() => {
+      dots[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % totalSlides;
+      dots[currentIndex].classList.add("active");
+    }, 3000);
+  </script>
 </body>
 </html>
