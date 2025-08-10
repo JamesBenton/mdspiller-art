@@ -20,7 +20,7 @@ body {
   color: rgb(22, 22, 41);                 /* make text readable */
   padding: 10px 20px;          /* space inside the box */
   text-align: center;           /* center text horizontally */
-  height: clamp(60vh, 70vh, 80vh);
+  height: clamp(60vh, 70vh, 60vh);
   position: relative;
   overflow: hidden;
 }
