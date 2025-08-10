@@ -100,6 +100,16 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 600px) {
+  .menu ul li {
+    margin: 5px 10px; /* smaller margin */
+  }
+  .menu ul li a {
+    font-size: 1rem;  /* smaller font size on mobile */
+    padding: 5px 12px; /* smaller padding */
+  }
+}
+
 .menu ul li a:hover,
 .menu ul li a.active {
   background: linear-gradient(135deg, #54224e 0%, #404199 100%);
